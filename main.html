@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<title>Book Library</title>
+<style>
+  body {
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
+  .book-library {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .book {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .book:last-child {
+    border-bottom: none;
+  }
+
+  .book img {
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 4px;
+  }
+
+  .book-details {
+    flex-grow: 1;
+  }
+
+  .book-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .book-author {
+    color: #777777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .price-block {
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    width: 80px;
+  }
+</style>
+</head>
 <body>
-	<div class="book-library">
-        <h2>Book Library</h2>
-        
-        <div class="book">
-            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
-            <h3>SPY IN THE AMBER</h3>
-            <p>BY Manohar Malgonkar</p>
-            <div class="price-block">Rs. 299</div>
-        </div>
-        
-        <div class="book">
-            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
-            <h3>Sacred Games</h3>
-            <p>By Vikram Chandra</p>
-            <div class="price-block">Rs. 199</div>
-        </div>
-		<div class="book">
-            <img src="https://course.acciojob.com/open-web-editor?question=e8da6649-702b-4659-8b21-e2cfb6c720ce" alt="Byomkesh Bakshi">
-            <h3>BYOMKESH BAKSHI</h3>
-            <p>By Sharadindu Bandyopadhyay</p>
-            <div class="price-block">Rs. 249</div>
-        </div>
+
+<div class="book-library">
+  <div class="book">
+    <img src="https://i.ibb.co/6y4jG7f/spy-in-the-amber.jpg" alt="Spy in the Amber">
+    <div class="book-details">
+      <div class="book-title">Spy in the Amber</div>
+      <div class="book-author">Author Name</div>
     </div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="price-block">Rs. 249</div>
+  </div>
+
+  <div class="book">
+    <img src="https://i.ibb.co/v32XF7z/sacred-games.jpg" alt="Sacred Games">
+    <div class="book-details">
+      <div class="book-title">Sacred Games</div>
+      <div class="book-author">Vikram Chandra</div>
+    </div>
+    <div class="price-block">Rs. 199</div>
+  </div>
+
+  <div class="book">
+    <img src="https://i.ibb.co/j4Qh0x8/byomkesh-bakshi.jpg" alt="Byomkesh Bakshi">
+    <div class="book-details">
+      <div class="book-title">Byomkesh Bakshi</div>
+      <div class="book-author">Author Name</div>
+    </div>
+    <div class="price-block">Rs. 349</div>
+  </div>
+</div>
 
 </body>
-
 </html>
